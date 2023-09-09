@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,300&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>India Best University</h1>
+        <p>A blog, also known as weblog,. Blog organizes content in the form of categories and posts.<br> Posts on a blog are presented in reverse chronological order. That means your latest post goes to the top of the page.</p>
+        <a href="" class="hero-btn" >Visit us to know more</a>
+    </div>
+
+    </section>
+
+    <!--------Course----------->
+    <section class="cousre">
+        <h1>Cousres we offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing eli</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermidiate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugiat numquam tenetur minus vel pariatur voluptate maiores! Sit dolor, nemo quisquam aspernatur maiores dolore, animi molestiae doloremque iure similique, deserunt porro rem cum repellat?</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugiat numquam tenetur minus vel pariatur voluptate maiores! Sit dolor, nemo quisquam aspernatur maiores dolore, animi molestiae doloremque iure similique, deserunt porro rem cum repellat?</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugiat numquam tenetur minus vel pariatur voluptate maiores! Sit dolor, nemo quisquam aspernatur maiores dolore, animi molestiae doloremque iure similique, deserunt porro rem cum repellat?</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------campus--------->
+    <section class="campus">
+        <h1>Our global campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="image/london.png">
+                <div class="layer">
+                    <h3>VELLORE</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="image/newyork.png">
+                <div class="layer">
+                    <h3>CHENNAI</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="image/washington.png">
+                <div class="layer">
+                    <h3>BHOPAL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--------javascript for toggle menu---------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
